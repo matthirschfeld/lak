@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  castle_name: MyString
+  castle_link: MyString
+  castle_status: MyString
+  reservation_date: MyString
+  user_id: 1
+
+two:
+  castle_name: MyString
+  castle_link: MyString
+  castle_status: MyString
+  reservation_date: MyString
+  user_id: 1

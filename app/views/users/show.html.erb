@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nick:</b>
+  <%= @user.nick %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>User link:</b>
+  <%= @user.user_link %>
+</p>
+
+<p>
+  <b>Alliance:</b>
+  <%= @user.alliance %>
+</p>
+
+<p>
+  <b>Alliance link:</b>
+  <%= @user.alliance_link %>
+</p>
+
+<p>
+  <b>Alliance status:</b>
+  <%= @user.alliance_status %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Destroy', @user, :confirm => 'Are you sure?', :method => :delete %> |
+<%= link_to 'View All', users_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nick: MyString
+  email: MyString
+  user_link: MyString
+  alliance: MyString
+  alliance_link: MyString
+  alliance_status: MyString
+
+two:
+  nick: MyString
+  email: MyString
+  user_link: MyString
+  alliance: MyString
+  alliance_link: MyString
+  alliance_status: MyString

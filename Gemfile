@@ -20,6 +20,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'rails3-generators'
+# gem 'haml-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -40,10 +42,11 @@ gem 'jquery-rails'
 gem 'mongo_mapper'
 gem 'bson_ext'
 
+
 group :test do
   gem "rspec"
   gem "rspec-rails"
-  gem "factory_girl"
+  gem "factory_girl_rails"
   # Pretty printed test output
   gem 'turn', :require => false
 end

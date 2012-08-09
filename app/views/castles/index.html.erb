@@ -1,0 +1,31 @@
+<h1>Listing castles</h1>
+
+<table>
+  <tr>
+    <th>User</th>    
+	<th>Castle name</th>
+    <th>Castle link</th>
+    <th>Castle status</th>
+    <th>Reservation date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @castles.each do |castle| %>
+  <tr>
+    <td><%= castle.user.nick %></td>    
+	<td><%= castle.castle_name %></td>
+    <td><%= castle.castle_link %></td>
+    <td><%= castle.castle_status %></td>
+    <td><%= castle.reservation_date %></td>
+    <td><%= link_to 'Show', castle %></td>
+    <td><%= link_to 'Edit', edit_castle_path(castle) %></td>
+    <td><%= link_to 'Destroy', castle, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Castle', new_castle_path %>

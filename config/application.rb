@@ -68,9 +68,9 @@ module Lak
     # added by MHi: to make scaffolding work with mongoDB
     config.generators do |g|
        g.orm :mongo_mapper    # :active_record
-       g.template_engine :erb # :haml
-       g.test_framework :rspec, :fixture => true, :views => false
-       g.fixture_replacement :factory_girl, :dir => "spec/factories"
+       g.template_engine :erubis # :haml
+#       g.test_framework :rspec, :fixture => true, :views => false
+#       g.fixture_replacement :factory_girl, :dir => "spec/factories"
      end
 
   end

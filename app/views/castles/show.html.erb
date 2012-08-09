@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @castle.user.nick %>
+</p>
+
+<p>
+  <b>Castle name:</b>
+  <%= @castle.castle_name %>
+</p>
+
+<p>
+  <b>Castle link:</b>
+  <%= @castle.castle_link %>
+</p>
+
+<p>
+  <b>Castle status:</b>
+  <%= @castle.castle_status %>
+</p>
+
+<p>
+  <b>Reservation date:</b>
+  <%= @castle.reservation_date %>
+</p>
+
+
+
+
+<%= link_to 'Edit', edit_castle_path(@castle) %> |
+<%= link_to 'Destroy', @castle, :confirm => 'Are you sure?', :method => :delete %> |
+<%= link_to 'View All', castles_path %>
