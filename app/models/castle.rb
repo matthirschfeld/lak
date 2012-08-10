@@ -7,8 +7,7 @@ class Castle
   key :reservation_date, Time, :required => true
   key :user_id, ObjectId
   
-  Castle.ensure_index(:castle_name)
-  
+    
   belongs_to :user
 
 end

@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :castle_status %><br />
-    <%= f.text_field :castle_status %>
+    <%= f.select :castle_status, ['reserved','taken']%>
   </div>
   <div class="field">
     <%= f.label :reservation_date %><br />
